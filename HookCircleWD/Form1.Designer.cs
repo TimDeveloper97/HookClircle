@@ -30,24 +30,24 @@ namespace HookCircleWD
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.nInterval = new System.Windows.Forms.NumericUpDown();
             this.btnHookStop = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnHookStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnHookState = new System.Windows.Forms.Button();
+            this.nRadius = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nInterval)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nRadius)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.nInterval);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.nRadius);
             this.groupBox1.Controls.Add(this.btnHookStop);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnHookStart);
             this.groupBox1.Controls.Add(this.label1);
@@ -57,19 +57,6 @@ namespace HookCircleWD
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Settings";
-            // 
-            // nInterval
-            // 
-            this.nInterval.Location = new System.Drawing.Point(68, 98);
-            this.nInterval.Name = "nInterval";
-            this.nInterval.Size = new System.Drawing.Size(125, 20);
-            this.nInterval.TabIndex = 5;
-            this.nInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.nInterval.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // btnHookStop
             // 
@@ -82,15 +69,6 @@ namespace HookCircleWD
             this.btnHookStop.Click += new System.EventHandler(this.btnHookStop_Click);
             this.btnHookStop.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnHookStop_KeyDown);
             this.btnHookStop.KeyUp += new System.Windows.Forms.KeyEventHandler(this.btnHookStop_KeyUp);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 100);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Interval (s):";
             // 
             // label2
             // 
@@ -143,19 +121,45 @@ namespace HookCircleWD
             this.btnHookState.Text = "button3";
             this.btnHookState.UseVisualStyleBackColor = true;
             // 
+            // nRadius
+            // 
+            this.nRadius.Location = new System.Drawing.Point(68, 103);
+            this.nRadius.Name = "nRadius";
+            this.nRadius.Size = new System.Drawing.Size(125, 20);
+            this.nRadius.TabIndex = 6;
+            this.nRadius.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nRadius.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 105);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Radius:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 155);
+            this.ClientSize = new System.Drawing.Size(432, 150);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hook";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nInterval)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nRadius)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -163,14 +167,14 @@ namespace HookCircleWD
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.NumericUpDown nInterval;
         private System.Windows.Forms.Button btnHookStop;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnHookStart;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnHookState;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown nRadius;
     }
 }
 

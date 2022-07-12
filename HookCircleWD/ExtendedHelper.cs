@@ -16,7 +16,7 @@ namespace HookCircleWD
             {
                 s += item + " + ";
             }
-            return s.Substring(0, s.Length - 3);
+            return s.Length < 3 ? null : s.Substring(0, s.Length - 3);
         }
     }
 }
